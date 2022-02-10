@@ -159,11 +159,11 @@ main {
   border-radius: 9px;
 }
 
-.player--winner {
+.player--loser {
   background-color: #2f2f2f;
 }
 
-.player--winner .name {
+.player--loser .name {
   font-weight: 700;
   color: #c7365f;
 }
