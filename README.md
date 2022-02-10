@@ -6,7 +6,9 @@ Try it here! : https://rock-paper-scissors-221ef.web.app/
 
 V1.1 - Testbed
 
-- Initial commit
+- Tidied up code
+- Added UI indicator to show player that won a point
+- New emoji for New Game button
 
 V1 - Initial Release
 
