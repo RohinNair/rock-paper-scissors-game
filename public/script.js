@@ -57,11 +57,11 @@ btnPlay.addEventListener('click', function () {
   // }
 
   if (player2 === 0) {
-    current1El.textContent = 'Rock';
+    current1El.textContent = '🪨';
   } else if (player2 === 1) {
-    current1El.textContent = 'Paper';
+    current1El.textContent = '📃';
   } else if (player2 === 2) {
-    current1El.textContent = 'Scissors';
+    current1El.textContent = '✂️';
   }
 
   // Determine Winner

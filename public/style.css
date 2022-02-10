@@ -95,6 +95,10 @@ main {
   color: #ddd;
 }
 
+.option-icons {
+  font-size: 3rem;
+}
+
 .current-score {
   font-size: 3.5rem;
 }
