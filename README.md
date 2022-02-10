@@ -4,7 +4,7 @@ JavaScript game for Rock Paper Scissors between player and bot
 
 Try it here! : https://rock-paper-scissors-221ef.web.app/
 
-V1.1 - Testbed
+V1.1 - Minor Update
 
 - Tidied up code
 - Added UI indicator to show player that won a point
