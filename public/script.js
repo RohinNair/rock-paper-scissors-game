@@ -109,13 +109,13 @@ btnPlay.addEventListener('click', function () {
 
   if (player1score === 3) {
     document.querySelector('.player--1').classList.add('player--loser');
-    document.querySelector('.player--0').classList.add('player--active');
+    document.querySelector('.player--0').classList.add('player--winner');
     btnPlay.classList.add('hidden');
     document.querySelector('.over').classList.remove('hidden');
     document.querySelector('.over').src = 'game-over-1.png';
   } else if (player2score === 3) {
     document.querySelector('.player--0').classList.add('player--loser');
-    document.querySelector('.player--1').classList.add('player--active');
+    document.querySelector('.player--1').classList.add('player--winner');
     btnPlay.classList.add('hidden');
     document.querySelector('.over').classList.remove('hidden');
     document.querySelector('.over').src = 'game-over-2.png';

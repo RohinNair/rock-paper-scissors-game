@@ -63,17 +63,17 @@ main {
   margin-bottom: auto;
 }
 
-.player--active {
+.player--winner {
   background-color: rgba(255, 255, 255, 0.4);
 }
-.player--active .name {
+.player--winner .name {
   font-weight: 700;
 }
-.player--active .score {
+.player--winner .score {
   font-weight: 400;
 }
 
-.player--active .current {
+.player--winner .current {
   opacity: 1;
 }
 
