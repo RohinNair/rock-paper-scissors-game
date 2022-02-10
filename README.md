@@ -9,6 +9,7 @@ V1.2 - Big Update
 - Tidied up code
 - Added comments to code
 - Player 1 can now select what they want to put down
+- Added Emojis for selection instead of text
 
 V1.1 - Minor Update
 
