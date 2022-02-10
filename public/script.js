@@ -78,27 +78,42 @@ btnPlay.addEventListener('click', function () {
   // If P1 rolls Rock
   if (player1score < 3 || player2score < 3) {
     if (player1 === 0 && player2 === 1) {
+      document.querySelector('.player--1').classList.add('player--winner');
+      document.querySelector('.player--0').classList.remove('player--winner');
       player2score++;
       // console.log('P2 wins');
     } else if (player1 === 0 && player2 === 2) {
+      document.querySelector('.player--0').classList.add('player--winner');
+      document.querySelector('.player--1').classList.remove('player--winner');
       player1score++;
       // console.log('P1 wins');
     }
     // If P1 rolls Paper
     else if (player1 === 1 && player2 === 0) {
+      document.querySelector('.player--0').classList.add('player--winner');
+      document.querySelector('.player--1').classList.remove('player--winner');
       player1score++;
       // console.log('P1 wins');
     } else if (player1 === 1 && player2 === 2) {
+      document.querySelector('.player--1').classList.add('player--winner');
+      document.querySelector('.player--0').classList.remove('player--winner');
       player2score++;
       // console.log('P2 wins');
     }
     // If P1 rolls Scissors
     else if (player1 === 2 && player2 === 0) {
+      document.querySelector('.player--1').classList.add('player--winner');
+      document.querySelector('.player--0').classList.remove('player--winner');
       player2score++;
       // console.log('P2 wins');
     } else if (player1 === 2 && player2 === 1) {
+      document.querySelector('.player--0').classList.add('player--winner');
+      document.querySelector('.player--1').classList.remove('player--winner');
       player1score++;
       // console.log('P1 wins');
+    } else if (player1 === player2) {
+      document.querySelector('.player--0').classList.remove('player--winner');
+      document.querySelector('.player--1').classList.remove('player--winner');
     }
 
     // Award point to winner
