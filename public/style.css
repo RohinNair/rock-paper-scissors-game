@@ -82,7 +82,7 @@ main {
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
-  width: 65%;
+  width: 70%;
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
@@ -174,8 +174,4 @@ main {
 
 .hidden {
   display: none;
-}
-
-.radioLeft {
-  text-align: left;
 }
