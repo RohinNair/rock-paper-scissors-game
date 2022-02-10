@@ -33,7 +33,12 @@ btnPlay.addEventListener('click', function () {
   // Generate Rock Paper Scissors for both players
 
   // Number between 1 to 2 will be generated and stored for each player
-  let player1 = Math.trunc(Math.random() * 3);
+  // let player1 = Math.trunc(Math.random() * 3);
+
+  let player1 = Number(
+    document.querySelector('input[name="player1"]:checked').value
+  );
+  console.log(player1);
 
   let player2 = Math.trunc(Math.random() * 3);
 
@@ -43,13 +48,13 @@ btnPlay.addEventListener('click', function () {
 
   // 2 - Scissors
 
-  if (player1 === 0) {
-    current0El.textContent = 'Rock';
-  } else if (player1 === 1) {
-    current0El.textContent = 'Paper';
-  } else if (player1 === 2) {
-    current0El.textContent = 'Scissors';
-  }
+  // if (player1 === 0) {
+  //   current0El.textContent = 'Rock';
+  // } else if (player1 === 1) {
+  //   current0El.textContent = 'Paper';
+  // } else if (player1 === 2) {
+  //   current0El.textContent = 'Scissors';
+  // }
 
   if (player2 === 0) {
     current1El.textContent = 'Rock';

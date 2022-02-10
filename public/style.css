@@ -171,3 +171,7 @@ main {
 .hidden {
   display: none;
 }
+
+.radioLeft {
+  text-align: left;
+}
