@@ -25,6 +25,8 @@ let player2score = 0;
 
 document.querySelector('.over').classList.add('hidden');
 
+// Functions
+
 // Rock Paper Scissors function
 
 btnPlay.addEventListener('click', function () {
@@ -57,7 +59,6 @@ btnPlay.addEventListener('click', function () {
     current1El.textContent = 'Scissors';
   }
 
-  // console.log(player1, player2);
   // Determine Winner
 
   // Rules
@@ -76,9 +77,7 @@ btnPlay.addEventListener('click', function () {
 
   // If P1 rolls Rock
   if (player1score < 3 || player2score < 3) {
-    if (player1 === 0 && player2 === 0) {
-      // console.log("It's a draw");
-    } else if (player1 === 0 && player2 === 1) {
+    if (player1 === 0 && player2 === 1) {
       player2score++;
       // console.log('P2 wins');
     } else if (player1 === 0 && player2 === 2) {
@@ -89,8 +88,6 @@ btnPlay.addEventListener('click', function () {
     else if (player1 === 1 && player2 === 0) {
       player1score++;
       // console.log('P1 wins');
-    } else if (player1 === 1 && player2 === 1) {
-      // console.log("It's a draw");
     } else if (player1 === 1 && player2 === 2) {
       player2score++;
       // console.log('P2 wins');
@@ -102,8 +99,6 @@ btnPlay.addEventListener('click', function () {
     } else if (player1 === 2 && player2 === 1) {
       player1score++;
       // console.log('P1 wins');
-    } else if (player1 === 2 && player2 === 2) {
-      // console.log("It's a draw");
     }
 
     // Award point to winner
