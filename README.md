@@ -4,6 +4,10 @@ JavaScript game for Rock Paper Scissors between player and bot
 
 Try it here! : https://rock-paper-scissors-221ef.web.app/
 
+V1.1 - Testbed
+
+- Initial commit
+
 V1 - Initial Release
 
 Features:
