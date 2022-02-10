@@ -60,7 +60,6 @@ btnPlay.addEventListener('click', function () {
   }
 
   // Determine Winner
-
   // Rules
 
   // P1 0 && P2 0 - Draw
@@ -81,37 +80,33 @@ btnPlay.addEventListener('click', function () {
       document.querySelector('.player--1').classList.add('player--winner');
       document.querySelector('.player--0').classList.remove('player--winner');
       player2score++;
-      // console.log('P2 wins');
     } else if (player1 === 0 && player2 === 2) {
       document.querySelector('.player--0').classList.add('player--winner');
       document.querySelector('.player--1').classList.remove('player--winner');
       player1score++;
-      // console.log('P1 wins');
     }
     // If P1 rolls Paper
     else if (player1 === 1 && player2 === 0) {
       document.querySelector('.player--0').classList.add('player--winner');
       document.querySelector('.player--1').classList.remove('player--winner');
       player1score++;
-      // console.log('P1 wins');
     } else if (player1 === 1 && player2 === 2) {
       document.querySelector('.player--1').classList.add('player--winner');
       document.querySelector('.player--0').classList.remove('player--winner');
       player2score++;
-      // console.log('P2 wins');
     }
     // If P1 rolls Scissors
     else if (player1 === 2 && player2 === 0) {
       document.querySelector('.player--1').classList.add('player--winner');
       document.querySelector('.player--0').classList.remove('player--winner');
       player2score++;
-      // console.log('P2 wins');
     } else if (player1 === 2 && player2 === 1) {
       document.querySelector('.player--0').classList.add('player--winner');
       document.querySelector('.player--1').classList.remove('player--winner');
       player1score++;
-      // console.log('P1 wins');
-    } else if (player1 === player2) {
+    }
+    // If both players roll the same thing (draw)
+    else if (player1 === player2) {
       document.querySelector('.player--0').classList.remove('player--winner');
       document.querySelector('.player--1').classList.remove('player--winner');
     }
@@ -122,16 +117,25 @@ btnPlay.addEventListener('click', function () {
     score1El.textContent = player2score;
   }
 
+  // If Player 1 gets 3 points first
   if (player1score === 3) {
+    // Highlight Player 1 and darken Player 2
     document.querySelector('.player--1').classList.add('player--loser');
     document.querySelector('.player--0').classList.add('player--winner');
+    // Remove Play button
     btnPlay.classList.add('hidden');
+    // Show Game Over Sign Declaring the Winner
     document.querySelector('.over').classList.remove('hidden');
     document.querySelector('.over').src = 'game-over-1.png';
-  } else if (player2score === 3) {
+  }
+  // If Player 2 gets 3 points first
+  else if (player2score === 3) {
+    // Highlight Player 2 and darken Player 1
     document.querySelector('.player--0').classList.add('player--loser');
     document.querySelector('.player--1').classList.add('player--winner');
+    // Remove Play button
     btnPlay.classList.add('hidden');
+    // Show Game Over Sign Declaring the Winner
     document.querySelector('.over').classList.remove('hidden');
     document.querySelector('.over').src = 'game-over-2.png';
   }
@@ -141,6 +145,3 @@ btnNew.addEventListener('click', function () {
   // Reloads the entire page, resetting everything
   location.reload();
 });
-
-diceEl.classList.remove('hidden');
-diceEl.src = `dice-${dice}.png`;
