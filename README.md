@@ -4,6 +4,10 @@ JavaScript game for Rock Paper Scissors between player and bot
 
 Try it here! : https://rock-paper-scissors-221ef.web.app/
 
+V1.3 - ?
+
+- Labels are now clickable
+
 V1.2 - Big Update
 
 - Tidied up code
@@ -28,7 +32,7 @@ Features:
 
 Future Plans (Front-end):
 
-- Allow Player to select which option they wish to use (Rock, Paper, Scissors)
+- ~~Allow Player to select which option they wish to use (Rock, Paper, Scissors)~~ **Added in V1.2**
 - Add mobile responsive layout
 - Implement instruction texts
 - Allow players to add their name
