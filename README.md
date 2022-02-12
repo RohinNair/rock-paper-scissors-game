@@ -7,6 +7,7 @@ Try it here! : https://rock-paper-scissors-221ef.web.app/
 ## V1.3 - ?
 
 - Labels are now clickable
+- Added emoji as favicon ✂️!
 
 ## V1.2 - Big Update
 
