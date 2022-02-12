@@ -4,24 +4,24 @@ JavaScript game for Rock Paper Scissors between player and bot
 
 Try it here! : https://rock-paper-scissors-221ef.web.app/
 
-V1.3 - ?
+## V1.3 - ?
 
 - Labels are now clickable
 
-V1.2 - Big Update
+## V1.2 - Big Update
 
 - Tidied up code
 - Added comments to code
 - Player 1 can now select what they want to put down
 - Added Emojis for selection instead of text
 
-V1.1 - Minor Update
+## V1.1 - Minor Update
 
 - Tidied up code
 - Added UI indicator to show player that won a point
 - New emoji for New Game button
 
-V1 - Initial Release
+## V1 - Initial Release
 
 Features:
 
